@@ -1,0 +1,27 @@
+//在任意一个四位整数中，如果该数的个位数和百位数之和大于16，并且十位数和千位数之和小于3，就称这种数为“老九幸运数“，请小伙伴编程计算出在1000~9999中，一共有多少个满足老九幸运数的四位整数呢，打印出最终的个数！
+public class test {
+    public static void main(String[] args) {
+        //先定义各个数字
+        int onePlace;
+        int tenPlace;
+        int hundredPlace;
+        int thousandPlace;
+        int result;//个位数和百位数和
+        int result1;
+        int count = 0;
+        //判断个位数和百位数和是否大于十六,并且十位数和千位数和小于三
+        for (int i = 1000; i < 9999; i++) {
+            onePlace = i % 10;
+            tenPlace = i / 10 % 10;
+            hundredPlace = i / 100 % 10;
+            thousandPlace = i / 1000;
+            result = onePlace + hundredPlace;
+            result1 = tenPlace + thousandPlace;
+            if (result > 16 && result1 < 3) {
+                System.out.println("幸运数字:" + i);
+                count++;
+                System.out.println(count);
+            }
+        }
+    }
+}
