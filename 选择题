@@ -1,0 +1,61 @@
+1. 在下列Java语句类型中,不属于循环语句的是（）。
+
+A、continue
+B、while
+C、do-while
+D、for
+ 
+2. 请分析下列Java代码，其运行结果是在控制台输出（）行“老九君真帅！”。
+
+public  class HelloLaoJiu{
+        public static void main(String[] args){
+               int i = 20;
+               do{
+                      System.out.println("老九君真帅！");
+                      i = i + 1;
+}while( i <= 15 );
+}
+}
+A、   0
+B、   1
+C、   2
+D、  存在错误编译不通过
+
+3.在一个名为Test.java的文件中，有如下代码，则输出结果为（）。
+
+public  class  Test{
+        public static void main(String[] args){
+               int i = 0;
+               while(i > 10 ){
+       System.out.println(“我爱Java！”);
+}
+}
+}
+ 
+A、   输出10遍“我爱Java！”
+B、   什么也不输出
+C、   程序编译错误
+D、  程序逻辑错误
+ 
+4.在Java中，while与do-while的区别是（）。
+
+A、do-while的循环体至少无条件执行一次
+B、在任何情况下，do-while和while都不可以互相转换
+C、while比do-while的控件条件更严格
+D、while是先执行循环体后判断控件条件，do-while则反之
+ 
+ 
+5. 【多选】对于do{循环体}while(循环条件)，下面说法正确的是（）。
+
+A、循环条件为真时，执行循环体
+B、循环体至少执行一次
+C、循环条件为假时，才执行一次循环体
+D、循环体一直会执行
+
+ 
+6.在jdk1.7环境下，switch选择语句，不支持的数据类型有（）。
+
+A、   int
+B、   boolean
+C、   char
+D、  Enum
