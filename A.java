@@ -39,7 +39,7 @@ public class A {
             System.out.println();
             System.out.println("是否继续（y|n）");
             isShop=in.next();
-        } while (isShop.equals("y"));
+        } while ("y".equalsIgnoreCase(isShop));
         System.out.println("应付金额："+total);
         System.out.print("实际金额：");
         double realPay = in.nextDouble();
